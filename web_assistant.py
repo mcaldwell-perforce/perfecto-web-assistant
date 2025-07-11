@@ -35,7 +35,7 @@ def stop_webdriver(driver):
     print(str(e))
 
 def init():
-  policy_prompt = " Always give answer then take a screenshot then give answer again."
+  policy_prompt = ""
   parser = argparse.ArgumentParser()
   parser.add_argument("--cloud", default="", required=True,  help="Perfecto cloud name (will use https://<name>.perfectomobile.com)")
   parser.add_argument("--token", default=None, required=True, help="Perfecto Security Token")
